@@ -1,0 +1,2 @@
+1. Chỉnh lại Loader vô giữa page và làm mờ page
+2. exclusive section call api to navigate

@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../../../assets/Images/pointhouse-suites-main-house.jpg);
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+}
+.navbar-logo {
+  cursor: pointer;
+}
+.nav-link li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 30px;
+  cursor: pointer;
+  color: white;
+}
+.profile-div-btn {
+  background: #ff5a5f;
+  color: #000;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 20px;
+}
+.airbnb-your-home {
+  color: white;
+  cursor: pointer;
+  padding: 8px 20px;
+}
+
+.container {
+  padding: 0 7%;
+}
+.header h1 {
+  font-size: 4vw;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  padding-top: 22%;
+}
+
+.search-bar {
+  background: #fff;
+  width: 100%;
+  margin: 30px auto;
+  padding: 6px 10px 6px 30px;
+  border-radius: 50px;
+}
+.search-bar form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.search-bar form input {
+  display: block;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.search-bar form button {
+  background: #ff5361;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  color: white;
+}
+.location-input {
+  flex: 1;
+}
+.search-bar form label {
+  font-weight: 600;
+}

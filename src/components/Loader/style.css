@@ -1,0 +1,69 @@
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+.wave-loader {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wave-loader .bar {
+  width: 12px;
+  border-radius: 10px;
+  background: #fff;
+  animation: movement 1.5s ease-in-out;
+}
+@keyframes movement {
+  0%,
+  100% {
+    height: 2px;
+  }
+  50% {
+    height: 80px;
+  }
+}
+.wave-loader .bar:nth-child(1) {
+  background-color: #0000ff;
+  animation-delay: 1s;
+}
+.wave-loader .bar:nth-child(2) {
+  background-color: #6699ff;
+  animation-delay: 0.8s;
+}
+.wave-loader .bar:nth-child(3) {
+  background-color: #0000ff;
+  animation-delay: 0.6s;
+}
+.wave-loader .bar:nth-child(4) {
+  background-color: #6699ff;
+  animation-delay: 0.4s;
+}
+.wave-loader .bar:nth-child(5) {
+  background-color: #0000ff;
+  animation-delay: 0.2s;
+}
+.wave-loader .bar:nth-child(6) {
+  background-color: #6699ff;
+  animation-delay: 0.2s;
+}
+.wave-loader .bar:nth-child(7) {
+  background-color: #0000ff;
+  animation-delay: 0.4s;
+}
+.wave-loader .bar:nth-child(8) {
+  background-color: #6699ff;
+  animation-delay: 0.6s;
+}
+.wave-loader .bar:nth-child(9) {
+  background-color: #0000ff;
+  animation-delay: 0.8s;
+}
+.wave-loader .bar:nth-child(10) {
+  background-color: #6699ff;
+  animation-delay: 1s;
+}

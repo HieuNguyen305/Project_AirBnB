@@ -1,7 +1,17 @@
+import { BrowserRouter, Routes } from "react-router-dom";
 import "./App.css";
-import Airbnb from "./components/airbnb";
+import renderRoutes from "./routes";
+import { Suspense } from "react";
+import Loader from "./components/Loader/Loader";
+
 function App() {
-  return <Airbnb />;
+  return (
+    <Suspense fallback={<div><Loader /></div>}>
+      <BrowserRouter>
+        <Routes>{renderRoutes()}</Routes>
+      </BrowserRouter>
+    </Suspense>
+  );
 }
 
 export default App;

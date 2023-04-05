@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://shop.cyberlearn.vn/api/",
+  baseURL: "https://airbnbnew.cybersoft.edu.vn/api/",
 });
 
 api.interceptors.request.use((config) => {
