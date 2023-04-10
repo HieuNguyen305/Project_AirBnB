@@ -1,49 +1,30 @@
-import React from 'react'
-import logo from "../../../assets/Images/pointhouse-suites-main-house.jpg"
+import React, { useState, useEffect } from 'react'
 import "./style.css"
+import api from '../../../utils/ApiUtils';
+import axios from 'axios';
 function HomePages() {
+    const [searchLocation, setSearchLocation] = useState([]);
+    useEffect(() => {
+        const fetchData = () => {
+            axios
+                .get(`api` / "vi-tri/phan-trang-tim-kiem?pageIndex=1&pageSize=8")
+                .then(result => result.JSON())
+                .catch((error) => {
+                    
+                })
+        }
+    })
     return (
         <>
-            {/* <div className="container">
-                <h2>Ở bất cứ đâu</h2>
-                <div className='exclusives'>
-                    <div>
-                        <img src={logo} alt="logo" className="navbar-logo" width={100} />
-                    </div>
-                    <div>
-                        <img src={logo} alt="logo" className="navbar-logo" width={100} />
-                    </div>
-                    <div>
-                        <img src={logo} alt="logo" className="navbar-logo" width={100} />
-                    </div>
-                    <div>
-                        <img src={logo} alt="logo" className="navbar-logo" width={100} />
-                    </div>
-                </div>
-            </div> */}
-            <div className="container-fluid">
-                <h2 className='sub-title'>Ở bất cứ đâu</h2>
-                <div className='anywhere'>
-                    <div>
-                        <img src={logo} alt='logo' />
-                        <h3>Toàn bộ nhà</h3>
-                    </div>
-                    <div>
-                        <img src={logo} alt='logo' />
-                        <h3>Chỗ ở độc đáo</h3>
-                    </div>
-                    <div>
-                        <img src={logo} alt='logo' />
-                        <h3>Trang trại và thiên nhiên</h3>
-                    </div>
-                    <div>
-                        <img src={logo} alt='logo' />
-                        <h3>Cho phép mang theo thú cưng</h3>
-                    </div>
-                </div>
-            </div>
+            <main className='container-fluid pl-5'>
+                <section className='pt-5 pb-5'>
+                    <h2 className='pl-5'>Khám phá những điểm đến gần đây</h2>
+                    {/* Get some data from a server - API */}
+                </section>
+            </main>
         </>
     )
 }
 
-export default HomePages
+export default HomePages;
+

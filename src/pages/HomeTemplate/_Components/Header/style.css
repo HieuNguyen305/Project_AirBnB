@@ -17,13 +17,17 @@ nav {
   justify-content: space-between;
   padding: 20px 7%;
 }
+.header img {
+  padding-bottom: 20px;
+}
 .navbar-logo {
   cursor: pointer;
 }
 .nav-link li {
   list-style: none;
   display: inline-block;
-  margin: 10px 30px;
+  margin: 10px 20px;
+  padding-left: 20px;
   cursor: pointer;
   color: white;
 }
@@ -35,10 +39,25 @@ nav {
   font-size: 14px;
   border-radius: 20px;
 }
+
+.profile-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 15px;
+}
+
+.globe-div {
+  color: #fff;
+  cursor: pointer;
+}
+
 .airbnb-your-home {
   color: white;
   cursor: pointer;
-  padding: 8px 20px;
+  padding: 0.5 1rem;
+  font-weight: 500;
 }
 
 .container {
@@ -64,6 +83,12 @@ nav {
   align-items: center;
   flex-wrap: wrap;
 }
+
+.search-bar span {
+  border-left: 1px solid #d1d1d6;
+  height: 50px;
+  padding-left: 15px;
+}
 .search-bar form input {
   display: block;
   border: 0;
@@ -84,4 +109,11 @@ nav {
 }
 .search-bar form label {
   font-weight: 600;
+}
+
+.profile-menu-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.25rem;
 }

@@ -1,6 +1,6 @@
 import logo from "../../../../assets/Images/long-logo.png";
 import "./style.css";
-// import LanguageIcon from '@mui/icons-material/Language';
+import LanguageIcon from '@mui/icons-material/Language';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import BasicMenu from "./profileMenu";
 function Header() {
@@ -14,12 +14,14 @@ function Header() {
                         <li>Trải nghiệm</li>
                         <li>Trải nghiệm trực tuyến</li>
                     </ul>
-                    {/* <div className="airbnb-your-home">Đón tiếp khách</div>
-                    <div className="airbnb-your-home">
-                        <LanguageIcon sx={{ fontSize: "1.3rem" }} />
-                    </div> */}
-                    <div className="profile-div-btn">
-                        <BasicMenu />
+                    <div className="profile-container">
+                        <div className="airbnb-your-home">Đón tiếp khách</div>
+                        <div className="globe-div">
+                            <LanguageIcon />
+                        </div>
+                        <div className="profile-div-btn">
+                            <BasicMenu />
+                        </div>
                     </div>
                 </nav>
                 <div className="container">
@@ -30,14 +32,17 @@ function Header() {
                                 <label>Địa Điểm</label>
                                 <input type="text" placeholder="Bạn sắp đi đâu?" />
                             </div>
+                            <span></span>
                             <div>
                                 <label>Nhận phòng</label>
                                 <input type="text" placeholder="Thêm ngày" />
                             </div>
+                            <span></span>
                             <div>
                                 <label>Trả phòng</label>
                                 <input type="text" placeholder="Thêm ngày" />
                             </div>
+                            <span></span>
                             <div>
                                 <label>Khách</label>
                                 <input type="text" placeholder="Thêm khách" />

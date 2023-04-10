@@ -1,6 +1,7 @@
-footer {
+
+.footer {
   background-color: rgb(241, 238, 238);
-  padding: 20px 50px;
+  padding: 30px 50px;
 }
 
 h5 {
@@ -24,6 +25,14 @@ ul.list-unstyled li a:hover {
 p {
   font-size: 1rem;
   margin-top: 20px;
+}
+
+.copyright {
+  margin: 10px 20px;
+}
+
+.text-md-right {
+  margin-top: .4rem;
 }
 
 @media (max-width: 767px) {

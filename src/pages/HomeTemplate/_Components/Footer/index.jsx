@@ -61,10 +61,10 @@ export default function Footer() {
                     </div>
                     <hr />
                     <div className="row">
-                        <div className="col-md-6 text-md-left pl-5">
-                            <p className="copyright mb-0"> &copy;{new Date().getFullYear()} Airbnb, Inc. All rights reserved · Quyền riêng tư · Điều khoản · Sơ đồ trang web</p>
+                        <div className="col-md-6 text-md-left">
+                            <p className="copyright"> &copy;{new Date().getFullYear()} Airbnb, Inc. All rights reserved · Quyền riêng tư · Điều khoản · Sơ đồ trang web</p>
                         </div>
-                        <div className="col-md-6 text-md-right pr-5">
+                        <div className="col-md-6 text-md-right">
                             <LanguageIcon />
                             <span><u>Tiếng Việt(VN)</u></span>
                             <span className='pl-4'> $ <u>USD</u></span>
